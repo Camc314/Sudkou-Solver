@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.title {
+    background: linear-gradient(45deg, rgba(75, 173, 224, 1) 0%, rgba(62, 97, 207, 1) 61%, rgba(122, 69, 252, 1) 100%);
+    box-shadow: 0px 0px 17px 1px rgba(138, 138, 138, 1);
+    border-radius: 0.3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.title h1 {
+    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.infoContainer {
+    background: linear-gradient(45deg, rgba(75, 173, 224, 1) 0%, rgba(62, 97, 207, 1) 61%, rgba(122, 69, 252, 1) 100%);
+    box-shadow: 0px 0px 17px 1px rgba(138, 138, 138, 1);
+    border-radius: 0.3rem;
+    color: white;
+    padding:1rem;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, rgba(75, 173, 224, 1) 0%, rgba(62, 97, 207, 1) 61%, rgba(122, 69, 252, 1) 100%);
+    box-shadow: 0px 0px 17px 1px rgba(138, 138, 138, 1);
+    border-radius: 0.3rem;
+}
+
+.buttons {
+    margin: 0.4rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    border: none;
+    height: 1.5rem;
+    max-width: 45%;
+    min-width: 7.4rem;
+}
+
+.buttons:hover {
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.gridContainer {
+    /*display: grid;*/
+    /*grid-template-rows: auto auto auto auto auto auto auto auto auto;*/
+    background: linear-gradient(45deg, rgba(75, 173, 224, 1) 0%, rgba(62, 97, 207, 1) 61%, rgba(122, 69, 252, 1) 100%);
+    padding: 0.5rem;
+    ;
+    border-radius: 0.3rem;
+    width: auto;
+    box-shadow: 0px 0px 17px 1px rgba(138, 138, 138, 1);
+    display: flex;
+    flex-direction: column;
+    /*column-gap: 0px;*/
+    /*row-gap: 0px;*/
+}
+
+.gridCell {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0;
+    padding: 0;
+    border-color: transparent;
+    border-radius: 0.3rem;
+}
+
+.gridRow {
+    display: inline-block;
+    margin: auto;
+    column-gap: 0;
+    /*row-gap: 0px;*/
+}
+
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9 {
+    margin-top: 0;
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
+    margin-top: 1px;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
+    margin-top: 1px;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9 {
+    margin-top: 3px;
+}
+
+.e1, .e2, .e3, .e4, .e5, .e6, .e7, .e8, .e9 {
+    margin-top: 1px;
+}
+
+.f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9 {
+    margin-top: 1px;
+}
+
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9 {
+    margin-top: 3px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9 {
+    margin-top: 1px;
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9 {
+    margin-top: 1px;
+}
+
+.a4, .b4, .c4, .d4, .e4, .f4, .g4, .h4, .i4 {
+    margin-left: 3px;
+}
+
+.a7, .b7, .c7, .d7, .e7, .f7, .g7, .h7, .i7 {
+    margin-left: 3px;
+}
+
+.a7, .b7, .c7, .d7, .e7, .f7, .g7, .h7, .i7 {
+    margin-left: 3px;
+}
+
+.a8, .b8, .c8, .d8, .e8, .f8, .g8, .h8, .i8 {
+    margin-left: 1px;
+}
+
+.a9, .b9, .c9, .d9, .e9, .f9, .g9, .h9, .i9 {
+    margin-left: 1px;
+}
+
+.gridContainer1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+
+.gridCell1 {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid black;
+}
+
+.wrongNo {
+    background-color: #ff8282;
+}
+
+.fixedNumber {
+    color: blue;
+}
+
+.successSquare {
+    background-color: limegreen;
+}

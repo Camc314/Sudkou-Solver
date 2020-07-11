@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoko Solver and Tester</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Sudoko Solver and Tester By Cameron Clark</h1>
+    </div>
+
+    <div class="gridContainer">
+        <div class="gridRow">
+            <input class="a1 gridCell" type="number" min="1" max="9" id="a1">
+            <input class="a2 gridCell" type="number" min="1" max="9" id="a2">
+            <input class="a3 gridCell" type="number" min="1" max="9" id="a3">
+            <input class="a4 gridCell" type="number" min="1" max="9" id="a4">
+            <input class="a5 gridCell" type="number" min="1" max="9" id="a5">
+            <input class="a6 gridCell" type="number" min="1" max="9" id="a6">
+            <input class="a7 gridCell" type="number" min="1" max="9" id="a7">
+            <input class="a8 gridCell" type="number" min="1" max="9" id="a8">
+            <input class="a9 gridCell" type="number" min="1" max="9" id="a9">
+        </div>
+        <div class="gridRow">
+            <input class="b1 gridCell" type="number" min="1" max="9" id="b1">
+            <input class="b2 gridCell" type="number" min="1" max="9" id="b2">
+            <input class="b3 gridCell" type="number" min="1" max="9" id="b3">
+            <input class="b4 gridCell" type="number" min="1" max="9" id="b4">
+            <input class="b5 gridCell" type="number" min="1" max="9" id="b5">
+            <input class="b6 gridCell" type="number" min="1" max="9" id="b6">
+            <input class="b7 gridCell" type="number" min="1" max="9" id="b7">
+            <input class="b8 gridCell" type="number" min="1" max="9" id="b8">
+            <input class="b9 gridCell" type="number" min="1" max="9" id="b9">
+        </div>
+        <div class="gridRow">
+            <input class="c1 gridCell" type="number" min="1" max="9" id="c1">
+            <input class="c2 gridCell" type="number" min="1" max="9" id="c2">
+            <input class="c3 gridCell" type="number" min="1" max="9" id="c3">
+            <input class="c4 gridCell" type="numner" min="1" max="9" id="c4">
+            <input class="c5 gridCell" type="numner" min="1" max="9" id="c5">
+            <input class="c6 gridCell" type="number" min="1" max="9" id="c6">
+            <input class="c7 gridCell" type="number" min="1" max="9" id="c7">
+            <input class="c8 gridCell" type="number" min="1" max="9" id="c8">
+            <input class="c9 gridCell" type="number" min="1" max="9" id="c9">
+        </div>
+        <div class="gridRow">
+            <input class="d1 gridCell" type="number" min="1" max="9" id="d1">
+            <input class="d2 gridCell" type="number" min="1" max="9" id="d2">
+            <input class="d3 gridCell" type="number" min="1" max="9" id="d3">
+            <input class="d4 gridCell" type="number" min="1" max="9" id="d4">
+            <input class="d5 gridCell" type="number" min="1" max="9" id="d5">
+            <input class="d6 gridCell" type="number" min="1" max="9" id="d6">
+            <input class="d7 gridCell" type="number" min="1" max="9" id="d7">
+            <input class="d8 gridCell" type="number" min="1" max="9" id="d8">
+            <input class="d9 gridCell" type="number" min="1" max="9" id="d9">
+        </div>
+        <div class="gridRow">
+            <input class="e1 gridCell" type="number" min="1" max="9" id="e1">
+            <input class="e2 gridCell" type="number" min="1" max="9" id="e2">
+            <input class="e3 gridCell" type="number" min="1" max="9" id="e3">
+            <input class="e4 gridCell" type="number" min="1" max="9" id="e4">
+            <input class="e5 gridCell" type="number" min="1" max="9" id="e5">
+            <input class="e6 gridCell" type="number" min="1" max="9" id="e6">
+            <input class="e7 gridCell" type="number" min="1" max="9" id="e7">
+            <input class="e8 gridCell" type="number" min="1" max="9" id="e8">
+            <input class="e9 gridCell" type="number" min="1" max="9" id="e9">
+        </div>
+        <div class="gridRow">
+            <input class="f1 gridCell" type="number" min="1" max="9" id="f1">
+            <input class="f2 gridCell" type="number" min="1" max="9" id="f2">
+            <input class="f3 gridCell" type="number" min="1" max="9" id="f3">
+            <input class="f4 gridCell" type="number" min="1" max="9" id="f4">
+            <input class="f5 gridCell" type="number" min="1" max="9" id="f5">
+            <input class="f6 gridCell" type="number" min="1" max="9" id="f6">
+            <input class="f7 gridCell" type="number" min="1" max="9" id="f7">
+            <input class="f8 gridCell" type="number" min="1" max="9" id="f8">
+            <input class="f9 gridCell" type="number" min="1" max="9" id="f9">
+        </div>
+        <div class="gridRow">
+            <input class="g1 gridCell" type="number" min="1" max="9" id="g1">
+            <input class="g2 gridCell" type="number" min="1" max="9" id="g2">
+            <input class="g3 gridCell" type="number" min="1" max="9" id="g3">
+            <input class="g4 gridCell" type="number" min="1" max="9" id="g4">
+            <input class="g5 gridCell" type="number" min="1" max="9" id="g5">
+            <input class="g6 gridCell" type="number" min="1" max="9" id="g6">
+            <input class="g7 gridCell" type="number" min="1" max="9" id="g7">
+            <input class="g8 gridCell" type="number" min="1" max="9" id="g8">
+            <input class="g9 gridCell" type="number" min="1" max="9" id="g9">
+        </div>
+        <div class="gridRow">
+            <input class="h1 gridCell" type="number" min="1" max="9" id="h1">
+            <input class="h2 gridCell" type="number" min="1" max="9" id="h2">
+            <input class="h3 gridCell" type="number" min="1" max="9" id="h3">
+            <input class="h4 gridCell" type="number" min="1" max="9" id="h4">
+            <input class="h5 gridCell" type="number" min="1" max="9" id="h5">
+            <input class="h6 gridCell" type="number" min="1" max="9" id="h6">
+            <input class="h7 gridCell" type="number" min="1" max="9" id="h7">
+            <input class="h8 gridCell" type="number" min="1" max="9" id="h8">
+            <input class="h9 gridCell" type="number" min="1" max="9" id="h9">
+        </div>
+        <div class="gridRow">
+            <input class="i1 gridCell" type="number" min="1" max="9" id="i1">
+            <input class="i2 gridCell" type="number" min="1" max="9" id="i2">
+            <input class="i3 gridCell" type="number" min="1" max="9" id="i3">
+            <input class="i4 gridCell" type="number" min="1" max="9" id="i4">
+            <input class="i5 gridCell" type="number" min="1" max="9" id="i5">
+            <input class="i6 gridCell" type="number" min="1" max="9" id="i6">
+            <input class="i7 gridCell" type="number" min="1" max="9" id="i7">
+            <input class="i8 gridCell" type="number" min="1" max="9" id="i8">
+            <input class="i9 gridCell" type="number" min="1" max="9" id="i9">
+        </div>
+    </div>
+
+    <div class="buttonContainer">
+        <button id="loadSudoko" class="buttons">Load a Sudoko</button>
+        <button id="solveButton" class="buttons">Solve</button>
+        <button id="testSolutionButton" class="buttons">Test a Solution</button>`
+
+
+
+    </div>
+
+
+
+    <div class="infoContainer">
+        <h3>What is this?</h3>
+        <p>This is a program designed to take an input in the form of a sudoko, and either to test it to see if it is a
+            viable solution or to complete it and find all the missing answers.</p>
+        <h3>How Have I Coded it?</h3>
+        <p>I completed this project only using vaniller HTML, CSS and Javascript, no external Javascript Libraries were used. Similary, all the code in the project is original and my own. However, to aid my learning, I have used research tools such as google, my past notes and other websites to gain the knowledge and skills required to complete it.</p>
+    </div>
+
+</body>
+
+</html>
