@@ -1,10 +1,10 @@
 # Sudoku-Solver
 A simple web program that solves a sudoku puzzle.
-
+It is hosted on [Netifly](https://www.netlify.com/) [here](https://zealous-johnson-2daa08.netlify.app/).
 
 The Program can do two things:
-1. It can either take input in the form of a partially solved sudoku puzzle and solve it.
-2. Check if an already-completed puzzle is correct and has no inconsistencies.
+1. Solve an incomplete Sudoku
+2. Check if a solved Sudoku is valid
 
 Learn more about Sudoku [here](https://en.wikipedia.org/wiki/Sudoku)
 
