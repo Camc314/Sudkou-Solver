@@ -1,6 +1,6 @@
 # Sudoku-Solver
 A simple web program that solves a sudoku puzzle.
-It is hosted on [Netifly](https://www.netlify.com/) [here](https://zealous-johnson-2daa08.netlify.app/).
+It is hosted on [Netlify here](https://zealous-johnson-2daa08.netlify.app/).
 
 The Program can do two things:
 1. Solve an incomplete Sudoku
