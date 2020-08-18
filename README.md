@@ -1,4 +1,6 @@
 # Sudoku-Solver
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5ce506c-3263-40f9-a9c2-942af78cf9ca/deploy-status)](https://zealous-johnson-2daa08.netlify.app/)
+
 A simple web program that solves a sudoku puzzle.
 It is hosted on [Netlify here](https://zealous-johnson-2daa08.netlify.app/).
 
